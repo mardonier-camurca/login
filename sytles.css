@@ -50,6 +50,7 @@ body {
   /* Estilização personalizada para o checkbox */
   input[type="checkbox"] {
     accent-color: #9333ea;
+    cursor: pointer;
   }
   
   /* Animação suave para hover */
