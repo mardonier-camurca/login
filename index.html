@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login com Tema Escuro</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.20/dist/full.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@1.4.2/src/css/phosphor.css" />
+</head>
+<body class="min-h-screen bg-base-100 text-base-content flex items-center justify-center">
+
+  <!-- Toggle de Tema -->
+  <div class="absolute top-4 right-4">
+    <label class="swap swap-rotate">
+      <input type="checkbox" class="theme-controller" value="light" />
+      <!-- Ícone escuro -->
+      <i class="swap-on ph ph-sun text-2xl text-yellow-400"></i>
+      <!-- Ícone claro -->
+      <i class="swap-off ph ph-moon text-2xl text-gray-300"></i>
+    </label>
+  </div>
+
+  <!-- Card de login -->
+  <div class="w-full max-w-sm p-8 bg-base-200 shadow-2xl rounded-2xl">
+    <h2 class="text-2xl font-bold text-center mb-6">Login</h2>
+
+    <form method="POST" action="/login">
+      <div class="mb-4">
+        <label class="label">
+          <span class="label-text">Usuário</span>
+        </label>
+        <label class="input input-bordered flex items-center gap-2">
+          <i class="ph ph-user text-lg"></i>
+          <input type="text" name="usuario" class="grow" placeholder="Digite seu usuário" required />
+        </label>
+      </div>
+
+      <div class="mb-4">
+        <label class="label">
+          <span class="label-text">Senha</span>
+        </label>
+        <label class="input input-bordered flex items-center gap-2">
+          <i class="ph ph-lock text-lg"></i>
+          <input type="password" name="senha" class="grow" placeholder="Digite sua senha" required />
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-full mt-4">Entrar</button>
+    </form>
+
+    <div class="text-center mt-6">
+      <a href="#" class="text-sm text-blue-400 hover:underline">Esqueceu a senha?</a>
+    </div>
+  </div>
+
+</body>
+</html>
