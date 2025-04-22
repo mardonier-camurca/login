@@ -1,0 +1,60 @@
+/* Estilos adicionais para o tema dark */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .bg-gray-900 {
+    background-color: #121212;
+  }
+  
+  .bg-gray-800 {
+    background-color: #1e1e1e;
+  }
+  
+  .bg-gray-700 {
+    background-color: #2d2d2d;
+  }
+  
+  .text-purple-400 {
+    color: #c084fc;
+  }
+  
+  .text-purple-300 {
+    color: #d8b4fe;
+  }
+  
+  .bg-purple-600 {
+    background-color: #9333ea;
+  }
+  
+  .bg-purple-700 {
+    background-color: #7e22ce;
+  }
+  
+  .focus\:ring-purple-500:focus {
+    --tw-ring-color: #a855f7;
+    --tw-ring-opacity: 1;
+    box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.5);
+  }
+  
+  .border-gray-700 {
+    border-color: #404040;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  /* Estilização personalizada para o checkbox */
+  input[type="checkbox"] {
+    accent-color: #9333ea;
+  }
+  
+  /* Animação suave para hover */
+  a,
+  button {
+    transition: all 0.3s ease;
+  }
+  
